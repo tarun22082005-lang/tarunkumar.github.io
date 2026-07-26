@@ -301,6 +301,59 @@
   .fact .n{ font-family:var(--font-display); font-weight:900; font-size:30px; }
   .fact .l{ font-family:var(--font-mono); font-size:11px; color:var(--ink-faint); text-transform:uppercase; margin-top:4px; }
 
+
+  /* ============================================================
+     EXPERIENCE
+     ============================================================ */
+  .exp-card{ padding:8px 0 4px; }
+  .exp-head{
+    display:flex; justify-content:space-between; align-items:baseline;
+    flex-wrap:wrap; gap:12px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--rule);
+    margin-bottom:24px;
+  }
+  .exp-role{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:21px;
+    text-transform:uppercase;
+    letter-spacing:-0.005em;
+    color:var(--ink);
+  }
+  .exp-company{
+    font-family:var(--font-mono);
+    font-size:13px;
+    color:var(--accent);
+    margin-top:6px;
+  }
+  .exp-duration{
+    font-family:var(--font-mono);
+    font-size:12px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    white-space:nowrap;
+  }
+  .exp-list{ list-style:none; }
+  .exp-list li{
+    position:relative;
+    padding:14px 0 14px 26px;
+    border-bottom:1px solid var(--rule);
+    font-size:15px;
+    line-height:1.6;
+    color:var(--ink-dim);
+  }
+  .exp-list li:last-child{ border-bottom:none; }
+  .exp-list li::before{
+    content:"—";
+    position:absolute; left:0; top:14px;
+    color:var(--accent);
+    font-family:var(--font-mono);
+  }
+  .exp-list li strong{ color:var(--ink); font-weight:600; }
+ 
+
   /* ============================================================
      SKILLS
      ============================================================ */
@@ -556,6 +609,39 @@
     </div>
   </div>
 </section>
+
+
+
+  !-- ================= EXPERIENCE ================= -->
+<section id="experience" class="reveal">
+  <div class="wrap grid12">
+    <div class="sec-num">02</div>
+    <div class="sec-head">
+      <h2>Experience</h2>
+      <div class="sec-sub">Internship</div>
+    </div>
+    <div class="sec-body">
+ 
+      <div class="exp-card">
+        <div class="exp-head">
+          <div>
+            <div class="exp-role">Data Scientist Intern</div>
+            <div class="exp-company">Rubixe Innovative Tech Solutions</div>
+          </div>
+          <div class="exp-duration">Internship</div>
+        </div>
+        <ul class="exp-list">
+          <li>Implemented and benchmarked <strong>KNN, Decision Tree, Logistic Regression, and Random Forest</strong> models using Scikit-learn to compare algorithms for optimal model selection.</li>
+          <li>Evaluated model performance using <strong>Accuracy, Precision, Recall, F1-Score, ROC-AUC, and Confusion Matrix</strong> to guide data-driven algorithm comparisons.</li>
+          <li>Built <strong>reusable ML pipelines</strong> in Scikit-learn to streamline preprocessing, feature engineering, model training, and prediction workflows.</li>
+          <li>Performed <strong>feature engineering and feature selection</strong> to improve model interpretability and predictive performance while minimizing overfitting.</li>
+        </ul>
+      </div>
+ 
+    </div>
+  </div>
+</section>
+
 
 <!-- ================= PROJECTS ================= -->
 <section id="projects" class="reveal">
